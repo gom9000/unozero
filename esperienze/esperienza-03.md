@@ -39,4 +39,9 @@
 
 ### Technical Analysis
 This experience showcases a complete, closed-loop digital subsystem integrating input, processing, and output stages:
-* **The Necessity of Debouncing:** Mechanical switches suffer from contact bounce, generating rapid, erratic voltage spikes when pressed. If you connected a raw switch directly to the counter,
+* **The Necessity of Debouncing:** Mechanical switches suffer from contact bounce, generating rapid, erratic voltage spikes when pressed. If you connected a raw switch directly to the counter, a single press could register as dozens of random counts. The 74LS02 circuitry on **SF-06** ensures a single, clean 15ms pulse.
+* **Decade Processing:** The 74LS90 IC on **SF-09** detects the falling edge of this clean active-low pulse, increments its internal 4-bit binary state, and maintains that value on its BCD output until the next event or a reset condition occurs.
+
+### Further Challenges / Insights
+* **Asynchronous Reset:** Locate the reset pins on **SF-09**. What happens to the display if you short the active-low reset line to ground while the counter is at a high number like `7`? 
+* **Expanding Horizons:** A single Modulo-10 Counter is physically limited to counting from 0 to 9. How could we leverage the control signals on **SF-09** (like the Carry line) to expand this system so it can count up to 99?
