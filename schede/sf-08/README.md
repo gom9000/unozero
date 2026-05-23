@@ -1,17 +1,15 @@
-# Scheda funzione distrubuzione di linee dati
-Modulo di distribuzione delle linee dati.
+# SF-08: Data Line Distribution Module
+
+This module serves as a bus distribution hub for routing and splitting data lines across the system.
 
 ![sf-built](sf-08_built.jpg)
 
-
-## Schema elettrico
+## Schematic Diagram
 ![sf-schematic](sf-08_sch.jpg)
 
-
-## PCB
+## PCB Layout
 ![sf-pcb](sf-08_pcb.jpg)
 
-
-## Materiale occorrente
-- [x] paperboard 2x8cm
-- [x] 6x 4-pin connettore linee dati tipo Molex-KK o KF2510 4P
+## Bill of Materials (BOM)
+* [x] 1x Perfboard (2x8 cm)
+* [x] 6x 4-pin Connectors (Molex-KK or KF2510 type, Data Lines)

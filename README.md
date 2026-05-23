@@ -1,4 +1,6 @@
 # UnoZero - Digital Logic Experiences
+**Type**: Standalone Project | **Status**: Ongoing
+
 A collection of educational hands-on experiences in digital electronics, built using a custom ecosystem of modular logic boards.
 
 ![image](overview.jpg)

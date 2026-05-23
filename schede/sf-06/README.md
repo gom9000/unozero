@@ -1,29 +1,25 @@
-# Scheda funzione generatore di impulsi
-Modulo per generare impulsi logici singoli tramite switch.
-L'impulso inizia alla pressione dello switch e termina circa 15ms dopo, a prescindere dallo stato in cui si trova lo switch (se ancora premuto o rilasciato).
-La durata di 15ms dell'impulso è un tempo sufficientemente lungo da assorbire eventuali contatti spuri dello switch durante la sua pressione,
-ma anche non troppo lungo da essere percepito come un ritardo quando viene premuto velocemente più volte lo switch.
+# SF-06: Pulse Generator
+This module generates single logic pulses via manual switches. The pulse initiates upon pressing the switch and terminates approximately 15ms later, regardless of whether the switch remains pressed or is released. 
 
-La scheda è progettata con logica "active-low", in modo tale che l'uscita è sempre a livello alto, tranne quando l'impulso è attivo, periodo in cui si trova a livello basso.
+The 15ms duration is long enough to completely absorb and debounce any spurious switch contacts, yet short enough to prevent any perceived delay when the switch is pressed repeatedly in rapid succession.
+
+The board is designed with an **active-low** configuration. The output line is held at a high logic level by default, dropping to a low logic level only for the duration of the active pulse.
 
 ![sf-built](sf-06_built.jpg)
 
-
-## Schema elettrico
+## Schematic Diagram
 ![sf-schematic](sf-06_sch.jpg)
 
-
-## PCB
+## PCB Layout
 ![sf-pcb](sf-06_pcb.jpg)
 
-
-## Materiale occorrente
-- [x] paperboard 4x6cm
-- [x] 2x pulsanti microswitch SPST (normalmente aperti)
-- [x] 2x resistenze di pull-up 47Kohm
-- [x] 2x resistenze di pull-up 22Kohm
-- [x] 2x resistenze di pull-down 100ohm
-- [x] 2x IC 74LS02 Quadruple 2-input negative-or gate
-- [x] 4 x condensatori 100nF
-- [x] 2 x condensatori 1uF
-- [x] 2 x 2-pin connettore scheda tipo Molex-KK o KF2510 2P
+## Bill of Materials (BOM)
+* [x] 1x Perfboard (4x6 cm)
+* [x] 2x SPST Tactile Push Button Switches (Normally Open)
+* [x] 2x Resistors (47kΩ, Pull-up)
+* [x] 2x Resistors (22kΩ, Pull-up)
+* [x] 2x Resistors (100Ω, Pull-down)
+* [x] 2x IC 74LS02 (Quadruple 2-input NOR Gate)
+* [x] 4x Ceramic Capacitors (100nF)
+* [x] 2x Capacitors (1µF)
+* [x] 2x 2-pin Connectors (Molex-KK or KF2510 type)

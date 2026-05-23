@@ -1,32 +1,32 @@
-# Scheda funzione generatore linee logiche momentanee
-Modulo per generare 4 linee logiche momentanee, ossia attive solo mentre sono premuti i corrispondenti switch di attivazione, contrassegnati con: SW1, SW2, SW3, SW4. 
-Gli switch attivano ognuno una linea dati logica, contrassegnata a seconda dello switch a cui fa riferimento con: D1, D2, D3, D4. 
-Le linee possono trovarsi in uno dei due stati:
-- livello logico basso: ossia ad una tensione di 0V, che si indica con "0" logico o "L";
-- livello logico alto: ossia ad una tensione di +5V, che si indica con "1" logico o "H".
+# SF-02: Momentary Logic Line Generator
 
-La scheda è progettata con logica "active-low", in modo tale che quando uno switch è premuto (SW=ON), il livello della relativa linea della scheda è basso:
+This module generates 4 momentary logic lines that remain active only while their corresponding switches (labeled SW1, SW2, SW3, and SW4) are pressed. Each switch controls its respective data line, labeled D1, D2, D3, and D4.
 
-    SWn = OFF -> Dn = H
-    SWn = ON  -> Dn = L
+The lines operate in one of two states:
+* **Low logic level (L or "0"):** A voltage of 0V.
+* **High logic level (H or "1"):** A voltage of +5V.
+
+The board is designed with an **active-low** configuration. When a switch is pressed (SW=ON), the level of the corresponding data line is pulled low:
+
+```text
+SWn = OFF -> Dn = H
+SWn = ON  -> Dn = L
+```
 
 ![sf-built](sf-02_built.jpg)
 
-
-## Schema elettrico
+## Schematic Diagram
 ![sf-schematic](sf-02_sch.jpg)
 
-
-## PCB
+## PCB Layout
 ![sf-pcb](sf-02_pcb.jpg)
 
-
-## Materiale occorrente
-- [x] paperboard 4x6cm
-- [x] 4x pulsanti microswitch SPST (normalmente aperti)
-- [x] 4x resistenze di pull-up 47Kohm
-- [x] 4x resistenze di pull-down 100ohm
-- [x] IC 74LS00 Quadruple 2-input negative-and gate
-- [x] condensatore 100nF
-- [x] 2-pin connettore alimentazione scheda tipo Molex-KK o KF2510 2P
-- [x] 4-pin connettore linee dati tipo Molex-KK o KF2510 4P
+## Bill of Materials (BOM)
+* [x] 1x Perfboard (4x6 cm)
+* [x] 4x SPST Tactile Push Button Switches (Normally Open)
+* [x] 4x Resistors (47kΩ, Pull-up)
+* [x] 4x Resistors (100Ω, Pull-down)
+* [x] 1x IC 74LS00 (Quadruple 2-input NAND Gate)
+* [x] 1x Ceramic Capacitor (100nF)
+* [x] 1x 2-pin Connector (Molex-KK or KF2510 type, Board Power)
+* [x] 1x 4-pin Connector (Molex-KK or KF2510 type, Data Lines)

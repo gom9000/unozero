@@ -1,26 +1,24 @@
-# Scheda funzione di alimentazione schede
-E' il modulo che fornisce la tensione stabilizzata necessaria al funzionamento di tutte le schede.
-Funziona con un qualunque alimentatore esterno la cui tensione di uscita sia compresa tra +9V e +12V, stabilizzati o meno, e fornisce in uscita +5V stabilizzati, ed una corrente massima di circa 250mA.
+# SF-01: Board Power Supply Module
+This module provides the regulated voltage required to power all the functional boards in the system. It accepts any external power supply with an output voltage between $+9V$ and $+12V$ (regulated or unregulated) and delivers a stable $+5V$ output with a maximum current of approximately $250mA$.
 
 ![sf-built](sf-01_built.jpg)
 
 
-## Schema elettrico
+## Schematic Diagram
 ![sf-schematic](sf-01_sch.jpg)
 
-
-## PCB
+## PCB Layout
 ![sf-pcb](sf-01_pcb.jpg)
 
 
-## Materiale occorrente
-- [x] paperboard 4x6cm
-- [x] connettore di alimentazione 5.1mm
-- [x] resistenza di limitazione corrente LED 1Kohm
-- [x] LED verde per stato on/off
-- [x] condensatore elettrolitico 1000uF 50V
-- [x] 2x condensatori 0.1uF 50V
-- [x] ponte di diodi da 1A
-- [x] regolatore di tensione tipo 7805 in package TO220
-- [x] interruttore microswitch mono o bi-polare per on/off
-- [x] 4x 2-pin connettore tipo Molex-KK o KF2510
+## Bill of Materials
+- [x] 1x Perfboard (4x6 cm)
+- [x] 1x DC Power Jack (5.1mm)
+- [x] 1x Voltage Regulator (7805, TO-220 package)
+- [x] 1x Diode Bridge Rectifier (1A)
+- [x] 1x Electrolytic Capacitor (1000µF, 50V)
+- [x] 2x Ceramic Capacitors (0.1µF, 50V)
+- [x] 1x Resistor (1kΩ, LED current limiting)
+- [x] 1x Green LED (ON/OFF status indicator)
+- [x] 1x Microswitch (SPST or DPST, ON/OFF toggle)
+- [x] 4x 2-pin Connectors (Molex-KK or KF2510 type)
