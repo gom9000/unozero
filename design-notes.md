@@ -36,7 +36,7 @@ The power module uses a classic **LM7805** linear regulator fed by a bridge rect
   $$\theta_{JA,tot} = \theta_{JC} + \theta_{CS} + \theta_{HS} \approx 26^\circ\text{C/W}$$
   At peak power dissipation ($2.79\text{W}$) and ambient temperature $T_A = 25^\circ\text{C}$, the estimated junction temperature is:
   $$T_j = T_A + (P_{max} \cdot \theta_{JA,tot}) = 25^\circ\text{C} + (2.79\text{W} \cdot 26^\circ\text{C/W}) \approx 97.5^\circ\text{C}$$
-  This remains below the internal thermal shutdown threshold of the LM7805 ($T_{j,max} = 125^\circ\text{C}$).
+  This remains below the maximum junction temperature of the LM7805 ($T_{j,max} = 125^\circ\text{C}$).
 
 * **Overall Current Rating:** Based on these parameters, the power supply module is rated for a nominal maximum continuous load of **250mA** across the recommended input range ($9\text{V}$–$12\text{V}_\text{AC}$). This conservative limit provides safety margin even under worst-case input conditions.
 

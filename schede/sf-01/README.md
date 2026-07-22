@@ -14,7 +14,7 @@ This module provides the regulated voltage required to power all the functional 
 ## Bill of Materials
 - [x] 1x Perfboard (4x6 cm)
 - [x] 1x DC Power Jack (5.1mm)
-- [x] 1x Voltage Regulator (7805, TO-220 package)
+- [x] 1x Voltage Regulator (7805, TO-220 package) + heatsink ($\approx 20 ^\circ C/W$)
 - [x] 1x Diode Bridge Rectifier (1A)
 - [x] 1x Electrolytic Capacitor (1000µF, 50V)
 - [x] 2x Ceramic Capacitors (0.1µF, 50V)
