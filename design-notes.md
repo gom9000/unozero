@@ -38,7 +38,7 @@ The power module uses a classic **LM7805** linear regulator fed by a bridge rect
   $$T_j = T_A + (P_{max} \cdot \theta_{JA,tot}) = 25^\circ\text{C} + (2.79\text{W} \cdot 26^\circ\text{C/W}) \approx 97.5^\circ\text{C}$$
   This remains below the maximum junction temperature of the LM7805 ($T_{j,max} = 125^\circ\text{C}$).
 
-* **Overall Current Rating:** Based on these parameters, the power supply module is rated for a nominal maximum continuous load of **250mA** across the recommended input range ($9\text{V}$–$12V_{AC}$). This conservative limit provides safety margin even under worst-case input conditions.
+* **Overall Current Rating:** Based on these parameters, the power supply module is rated for a nominal maximum continuous load of **250mA** across the recommended input range ($9\text{V}$-$12V_{AC}$). This conservative limit provides safety margin even under worst-case input conditions.
 
 ### Notes on Notes
 These values are not unique: several nearby standard values would also operate correctly. The selected values were derived from worst-case TTL-LS datasheet parameters to provide comfortable operating margins while keeping the circuits simple and suitable for home construction.
