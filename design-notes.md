@@ -32,7 +32,7 @@ The power module uses a classic **LM7805** linear regulator fed by a bridge rect
 
 * **Dissipative Behavior (12V AC Input):** for a nominal input of $12\text{V}$ AC ($V_C \approx 15.57\text{V}$, $\Delta V^* = 10.57\text{V}$), peak thermal dissipation occurs at $I \approx 0.53\text{A}$, yielding $P_{max} \approx 2.79\text{W}$.
 
-* **Thermal Management with Heatsink:** To sustain higher input voltages ($12\text{V}_\text{AC}$), an onboard TO-220 heatsink ($\theta_{HS} \approx 20^\circ\text{C/W}$) is used. Accounting for junction-to-case ($\theta_{JC} \approx 5^\circ\text{C/W}$) and case-to-sink ($\theta_{CS} \approx 1^\circ\text{C/W}$) thermal resistances:
+* **Thermal Management with Heatsink:** To sustain higher input voltages ($12V_{AC}$), an onboard TO-220 heatsink ($\theta_{HS} \approx 20^\circ\text{C/W}$) is used. Accounting for junction-to-case ($\theta_{JC} \approx 5^\circ\text{C/W}$) and case-to-sink ($\theta_{CS} \approx 1^\circ\text{C/W}$) thermal resistances:
   $$\theta_{JA,tot} = \theta_{JC} + \theta_{CS} + \theta_{HS} \approx 26^\circ\text{C/W}$$
   At peak power dissipation ($2.79\text{W}$) and ambient temperature $T_A = 25^\circ\text{C}$, the estimated junction temperature is:
   $$T_j = T_A + (P_{max} \cdot \theta_{JA,tot}) = 25^\circ\text{C} + (2.79\text{W} \cdot 26^\circ\text{C/W}) \approx 97.5^\circ\text{C}$$
