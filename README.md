@@ -7,7 +7,7 @@ A collection of educational hands-on experiences in digital electronics, built u
 
 
 ## Introduction
-This project represents a workbench for exploring digital electronics through a modular, hardware-first approach. It has a dual objective: building the functional boards themselves and learning the core logic of digital systems—all without needing to dive into the underlying physics and complex mathematics of solid-state components.
+This project represents a workbench for exploring digital electronics through a modular, hardware-first approach. It has a dual objective: building the functional boards themselves and learning the core logic of digital systems, all without needing to dive into the underlying physics and complex mathematics of solid-state components.
 
 This kit gives you a hands-on way to build and experiment with real hardware.
 
@@ -26,6 +26,7 @@ Each board type is tracked with the prefix **SF** followed by a progressive iden
 * **[SF-08](schede/sf-08/)**: Data Line Distribution Module
 * **[SF-09](schede/sf-09/)**: Modulo-10 Counter
 
+For anyone interested in the reasoning behind specific component values, see [Design Notes](design-notes.md).
 
 ## Laboratory Experiences
 Every experience in this repository is structured into 3 distinct phases to guide the workflow:
